@@ -47,7 +47,7 @@ body.dark .toast{background:#f1f1f5;color:#1a1b20}
 </style>
 </head>
 <body>
-<header><div class="logo">Type<span>Study</span> ✳</div><div style="display:flex;align-items:center;gap:14px"><div class="topnote">Tu pequeño laboratorio de tipografía</div><button id="themeToggle" class="btn theme-toggle" type="button" aria-pressed="false" title="Activar modo oscuro">🌙 <span>Modo oscuro</span></button></div></header>
+<header><div class="logo">Type<span>Study</span> ✳</div><div style="display:flex;align-items:center;gap:14px"><button id="themeToggle" class="btn theme-toggle" type="button" aria-pressed="false" title="Activar modo oscuro">🌙 <span>Modo oscuro</span></button></div></header>
 <main>
   <section class="intro"><div><div class="eyebrow">Aprende mirando</div><h1>¿Qué tipografía es?</h1><p>Sube tus referencias, pon a prueba tu memoria y aprende a reconocer cada familia tipográfica, una tarjeta a la vez.</p></div><div class="stats"><div class="stat"><strong id="totalStat">0</strong><small>TIPOGRAFÍAS</small></div><div class="stat"><strong id="seenStat">0</strong><small>VISTAS HOY*</small></div><div class="stat"><strong id="accuracyStat">—</strong><small>ACIERTOS</small></div></div></section>
   <div class="tabs"><button class="tab active" data-tab="study">✳ Estudiar</button><button class="tab" data-tab="manage">＋ Mis tipografías</button></div>
@@ -81,7 +81,6 @@ body.dark .toast{background:#f1f1f5;color:#1a1b20}
     </div>
   </section>
 </main>
-<footer>Hecho para mirar mejor, recordar más y enamorarse de las letras.</footer><div class="toast" id="toast"></div>
 <script>
 const DB_NAME='TypeStudyDB', STORE='cards';
 let cards=[], current=null, revealed=false, sessionSeen=0, correct=0, wrong=0, fileData=null, shownIds=new Set(), toastTimer;
