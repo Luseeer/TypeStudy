@@ -20,11 +20,30 @@ h1{font-size:clamp(30px,5vw,46px);line-height:1.04;letter-spacing:-1.8px;margin:
 .side{padding:22px}.side h2{font-size:18px;margin:0 0 8px}.side p{font-size:13px;line-height:1.55;color:var(--muted);margin:0 0 17px}.progress-track{height:7px;border-radius:20px;background:#ece9e1;overflow:hidden;margin:10px 0 20px}.progress-fill{height:100%;background:var(--accent);width:0;transition:width .2s}.mini-list{display:flex;flex-direction:column;gap:8px}.mini-item{display:flex;align-items:center;gap:10px;border:1px solid var(--line);padding:8px;border-radius:12px;min-width:0}.thumb{width:42px;height:42px;flex-shrink:0;border-radius:8px;background:#f0eee8;display:flex;align-items:center;justify-content:center;overflow:hidden;color:#aaa;font-weight:800}.thumb img{width:100%;height:100%;object-fit:cover}.mini-name{font-size:12px;font-weight:750;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.mini-sub{font-size:11px;color:var(--muted);margin-top:3px}.mini-empty{font-size:13px;color:var(--muted);padding:14px 0}
 .manage{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px}.form-card{padding:23px}.form-card h2{margin:0 0 7px;font-size:20px}.form-card>p{color:var(--muted);font-size:13px;line-height:1.5;margin:0 0 20px}.drop{display:block;border:1.5px dashed #c9c5bb;border-radius:15px;padding:23px;text-align:center;cursor:pointer;background:#faf9f5}.drop:hover{border-color:var(--accent);background:#f7f6ff}.drop strong{display:block;margin:7px 0 4px}.drop span{font-size:12px;color:var(--muted)}input[type=file]{display:none}label.field{display:block;font-size:12px;font-weight:750;margin:16px 0 7px}.text-input{width:100%;border:1px solid var(--line);border-radius:11px;padding:12px 13px;font:inherit;background:white;outline:none}.text-input:focus{border-color:var(--accent);box-shadow:0 0 0 3px #635bff20}.selected-file{font-size:12px;color:var(--muted);margin-top:8px;overflow-wrap:anywhere}.library-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:15px}.library-head h2{font-size:20px;margin:0}.library-list{display:flex;flex-direction:column;gap:10px}.library-row{display:flex;align-items:center;gap:12px;padding:10px;border:1px solid var(--line);border-radius:14px;background:white}.library-row .thumb{width:58px;height:58px}.library-info{flex:1;min-width:0}.library-info strong{display:block;overflow-wrap:anywhere}.library-info small{color:var(--muted)}.delete{border:0;background:#f8e9e7;color:#a33e37;border-radius:9px;padding:9px 11px;cursor:pointer;font-weight:700}.notice{font-size:12px;color:var(--muted);line-height:1.5;margin-top:14px}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#20201e;color:white;padding:12px 18px;border-radius:12px;box-shadow:0 10px 35px #0002;display:none;z-index:5;font-size:13px}
 footer{text-align:center;color:var(--muted);font-size:12px;padding:20px;border-top:1px solid var(--line)}
+.theme-toggle{white-space:nowrap;display:inline-flex;align-items:center;gap:8px}
+body.dark{--bg:#14151a;--paper:#1e2028;--ink:#f1f1f5;--muted:#a4a6b3;--line:#363844;--accent:#a39cff;--accent2:#302d4a;--good:#7ed6a7;--bad:#ff9696}
+body.dark .pill{background:#30323d;color:#e0e1eb}
+body.dark .image-stage,body.dark .thumb{background:#292b35}
+body.dark .empty-art .glyph{color:#666a7a}
+body.dark .btn{background:#292b35;color:var(--ink);border-color:var(--line)}
+body.dark .btn.primary{background:var(--accent);color:#171625;border-color:var(--accent)}
+body.dark .btn.good{color:var(--good);border-color:#3b6a53}
+body.dark .btn.bad{color:var(--bad);border-color:#704343}
+body.dark .drop{background:#22242d;border-color:#555867}
+body.dark .drop:hover{background:#2b293e;border-color:var(--accent)}
+body.dark .text-input{background:#22242d;color:var(--ink);border-color:var(--line)}
+body.dark .library-row{background:var(--paper)}
+body.dark .progress-track{background:#30323d}
+body.dark .answer.hidden{color:#686b78}
+body.dark .delete{background:#482b2b;color:#ffb2ac}
+body.dark .tab.active{background:var(--accent);color:#171625;border-color:var(--accent)}
+body.dark .toast{background:#f1f1f5;color:#1a1b20}
+@media(prefers-reduced-motion:no-preference){body,.card,.stat,.library-row,.btn,.drop,.text-input{transition:background-color .18s ease,color .18s ease,border-color .18s ease}}
 @media(max-width:760px){.intro{align-items:start;flex-direction:column}.study-layout,.manage{grid-template-columns:1fr}.side{order:2}.topnote{display:none}.stats{width:100%}.stat{flex:1}.image-stage{height:280px}.main{padding-top:24px}}
 </style>
 </head>
 <body>
-<header><div class="logo">Type<span>Study</span> ✳</div><div class="topnote">Tu pequeño laboratorio de tipografía</div></header>
+<header><div class="logo">Type<span>Study</span> ✳</div><div style="display:flex;align-items:center;gap:14px"><div class="topnote">Tu pequeño laboratorio de tipografía</div><button id="themeToggle" class="btn theme-toggle" type="button" aria-pressed="false" title="Activar modo oscuro">🌙 <span>Modo oscuro</span></button></div></header>
 <main>
   <section class="intro"><div><div class="eyebrow">Aprende mirando</div><h1>¿Qué tipografía es?</h1><p>Sube tus referencias, pon a prueba tu memoria y aprende a reconocer cada familia tipográfica, una tarjeta a la vez.</p></div><div class="stats"><div class="stat"><strong id="totalStat">0</strong><small>TIPOGRAFÍAS</small></div><div class="stat"><strong id="seenStat">0</strong><small>VISTAS HOY*</small></div><div class="stat"><strong id="accuracyStat">—</strong><small>ACIERTOS</small></div></div></section>
   <div class="tabs"><button class="tab active" data-tab="study">✳ Estudiar</button><button class="tab" data-tab="manage">＋ Mis tipografías</button></div>
@@ -63,6 +82,9 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:20px;border-t
 const DB_NAME='TypeStudyDB', STORE='cards';
 let cards=[], current=null, revealed=false, sessionSeen=0, correct=0, wrong=0, fileData=null, shownIds=new Set(), toastTimer;
 const $=id=>document.getElementById(id);
+function applyTheme(theme){const dark=theme==='dark';document.body.classList.toggle('dark',dark);const btn=$('themeToggle');btn.innerHTML=dark?'☀️ <span>Modo claro</span>':'🌙 <span>Modo oscuro</span>';btn.setAttribute('aria-pressed',String(dark));btn.title=dark?'Activar modo claro':'Activar modo oscuro';}
+$('themeToggle').onclick=()=>{const next=document.body.classList.contains('dark')?'light':'dark';applyTheme(next);try{localStorage.setItem('typestudy-theme',next)}catch(e){}};
+try{applyTheme(localStorage.getItem('typestudy-theme')==='dark'?'dark':'light')}catch(e){applyTheme('light')}
 function toast(msg){const t=$('toast');t.textContent=msg;t.style.display='block';clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.style.display='none',2600)}
 function openDB(){return new Promise((resolve,reject)=>{const req=indexedDB.open(DB_NAME,1);req.onupgradeneeded=()=>req.result.createObjectStore(STORE,{keyPath:'id'});req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error)})}
 async function dbAll(){const db=await openDB();return new Promise((resolve,reject)=>{const r=db.transaction(STORE).objectStore(STORE).getAll();r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error)})}

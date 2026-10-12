@@ -1,60 +1,67 @@
 {
-  "title": "TypeStudy",
-  "description": "Tarjetas para estudiar familias tipográficas",
   "cards": [
     {
-      "id": "0ce0fed8-f9a4-48e0-a59c-4fb0022a4669",
+      "id": "bundled-1",
       "name": "Geometrica",
       "note": "",
-      "image": "images/01-geometrica.png"
+      "image": "images/font-1.png",
+      "created": 1791739048505
     },
     {
-      "id": "1f04941d-64bd-4079-9eb1-c0c5264a1f59",
+      "id": "bundled-2",
       "name": "Garalda",
       "note": "",
-      "image": "images/02-garalda.png"
+      "image": "images/font-2.png",
+      "created": 1791738967740
     },
     {
-      "id": "2151ad95-6623-4629-8158-b19ff27b5297",
+      "id": "bundled-3",
       "name": "Grotesca",
       "note": "",
-      "image": "images/03-grotesca.png"
+      "image": "images/font-3.png",
+      "created": 1791739590851
     },
     {
-      "id": "21d1b704-dae3-4599-9314-7ff1ff16e80c",
+      "id": "bundled-4",
       "name": "Mecanicas",
       "note": "",
-      "image": "images/04-mecanicas.png"
+      "image": "images/font-4.png",
+      "created": 1791739005322
     },
     {
-      "id": "3685eb75-f9c2-4219-a430-07440fccdd8d",
+      "id": "bundled-5",
       "name": "Humana",
       "note": "",
-      "image": "images/05-humana.png"
+      "image": "images/font-5.png",
+      "created": 1791738951574
     },
     {
-      "id": "5ec83ffe-f06c-4306-ab5d-55854ffc287e",
+      "id": "bundled-6",
       "name": "Didonas",
       "note": "",
-      "image": "images/06-didonas.png"
+      "image": "images/font-6.png",
+      "created": 1791738994749
     },
     {
-      "id": "6e807fe5-50e8-4dc7-a9fe-18441406f037",
+      "id": "bundled-7",
       "name": "Reales",
       "note": "",
-      "image": "images/07-reales.png"
+      "image": "images/font-7.png",
+      "created": 1791738980127
     },
     {
-      "id": "a80ffac0-d7f5-41c8-9210-e6ce8de0d9ec",
+      "id": "bundled-8",
       "name": "Humanistas",
       "note": "",
-      "image": "images/08-humanistas.png"
+      "image": "images/font-8.png",
+      "created": 1791739058690
     },
     {
-      "id": "cd558294-41c0-4abb-8b76-4aba3baf19c5",
+      "id": "bundled-9",
       "name": "Neo-grotesca",
       "note": "",
-      "image": "images/09-neo-grotesca.png"
+      "image": "images/font-9.png",
+      "created": 1791739602783
     }
   ]
 }
